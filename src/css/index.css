@@ -1,5 +1,9 @@
-body,
-* {
+:root {
+  --dead-color: gray;
+  --alive-color: white;
+}
+
+body {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
   color: rgb(252, 251, 250);
@@ -14,8 +18,40 @@ body {
   background-color: black;
 }
 
-.root {
+#root {
   height: 500px;
   width: 500px;
-  background-color: azure;
+}
+.game {
+  height: 500px;
+  width: 500px;
+  background-color: var(--dead-color);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cel {
+  height: Calc(100% / 100);
+  width: Calc(100% / 100);
+}
+
+.dead {
+  background-color: var(--dead-color);
+}
+
+.alive {
+  background-color: var(--alive-color);
+  transition: all 0s;
+  background-color: rgba(81, 203, 238, 0.5);
+}
+
+.toggle {
+  background-color: wheat;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  height: 20px;
 }
