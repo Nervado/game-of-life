@@ -1,0 +1,21 @@
+body,
+* {
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(252, 251, 250);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.root {
+  height: 500px;
+  width: 500px;
+  background-color: azure;
+}
